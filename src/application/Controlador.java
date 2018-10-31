@@ -9,8 +9,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class Controlador {
-	@FXML
-	private Stage stage1;
+	
 	
 	@FXML
 	public void newVentana() {
@@ -20,7 +19,7 @@ public class Controlador {
 			AnchorPane ventanaDos = (AnchorPane) loader.load();
 
 			
-			stage1.close();			
+					
 			
 			Stage stage = new Stage();
 			
