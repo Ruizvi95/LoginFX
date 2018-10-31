@@ -30,15 +30,14 @@ public class Controlador {
 	private Label abrirWindow;
 	
 	@FXML
-	public void newVentana() {
-		try {
+	public void newVentana() throws IOException {
+		
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("CreacionCuenta.fxml"));
 			
 			AnchorPane ventanaDos = (AnchorPane) loader.load();
 
 			
-			Stage thisStage= (Stage) abrirWindow.getScene().getWindow();
-			thisStage.close();
+			
 			
 			Stage stage = new Stage();
 			
@@ -48,10 +47,8 @@ public class Controlador {
 			stage.setTitle("Creación de cuenta");
 			stage.setScene(scene);
 			stage.show();
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+			cerrarVentana();
+		
 	}
 	
 	
@@ -130,5 +127,11 @@ public class Controlador {
 
 				});
 
+	}
+	
+	@FXML
+	public void cerrarVentana(){
+		Stage thisStage= (Stage) abrirWindow.getScene().getWindow();
+		thisStage.close();
 	}
 }
