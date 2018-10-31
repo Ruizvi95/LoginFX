@@ -1,0 +1,21 @@
+.gradiente{
+	-fx-background-color: linear-gradient(#2A5058, #ffa2b1);
+}
+
+
+.boton {
+	
+	-fx-background-color: red;
+	
+}
+
+.boton:hover{
+	
+	-fx-background-color:blue;
+}
+
+
+.texto:hover{
+	
+	-fx-text-fill:blue;
+}
