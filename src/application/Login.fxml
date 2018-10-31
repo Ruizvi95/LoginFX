@@ -76,7 +76,7 @@
                               <Insets left="20.0" />
                            </HBox.margin>
                         </Label>
-                        <Label fx:id="crearC" onMouseClicked="#newVentana" prefWidth="107.0" styleClass="texto" stylesheets="@estilos.css" text="Create a new account" textFill="#8d8a8a">
+                        <Label fx:id="abrirWindow" onMouseClicked="#newVentana" prefWidth="107.0" styleClass="texto" stylesheets="@estilos.css" text="Create a new account" textFill="#8d8a8a">
                            <font>
                               <Font size="10.0" />
                            </font>
