@@ -5,12 +5,14 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class Controlador {
+	
 	@FXML
-	private Stage stage1;
+	private Label abrirWindow;
 	
 	@FXML
 	public void newVentana() {
@@ -20,7 +22,8 @@ public class Controlador {
 			AnchorPane ventanaDos = (AnchorPane) loader.load();
 
 			
-			stage1.close();			
+			Stage thisStage= (Stage) abrirWindow.getScene().getWindow();
+			thisStage.close();
 			
 			Stage stage = new Stage();
 			

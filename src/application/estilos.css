@@ -6,6 +6,7 @@
 .boton {
 	
 	-fx-background-color: red;
+	-fx-background-radius: 5px;
 	
 }
 
