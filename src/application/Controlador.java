@@ -22,8 +22,7 @@ public class Controlador {
 			AnchorPane ventanaDos = (AnchorPane) loader.load();
 
 			
-			Stage thisStage= (Stage) abrirWindow.getScene().getWindow();
-			thisStage.close();		
+				
 			
 			Stage stage = new Stage();
 			
@@ -33,6 +32,9 @@ public class Controlador {
 			stage.setTitle("Creación de cuenta");
 			stage.setScene(scene);
 			stage.show();
+			
+			Stage thisStage= (Stage) abrirWindow.getScene().getWindow();
+			thisStage.close();	
 
 		} catch (IOException e) {
 			e.printStackTrace();
