@@ -20,3 +20,24 @@
 	
 	-fx-text-fill:blue;
 }
+
+.imagen1{
+	
+	-fx-background-image: url('foto1.jpg');
+	-fx-background-size: stretch;
+}
+
+.imagen2{
+	-fx-background-image:url('foto2.jpg');
+	-fx-background-size: stretch;
+}
+
+.imagen3{
+	-fx-background-image:url('foto3.jpg');
+-fx-background-size: stretch;
+}
+
+.imagen4{
+	-fx-background-image:url('foto4.jpg');
+	-fx-background-size: stretch;
+}

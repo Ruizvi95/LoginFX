@@ -29,27 +29,7 @@ public class Controlador {
 	@FXML
 	private Label abrirWindow;
 	
-	@FXML
-	public void newVentana() throws IOException {
-		
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("CreacionCuenta.fxml"));
-			
-			AnchorPane ventanaDos = (AnchorPane) loader.load();
-
-			
-			
-			
-			Stage stage = new Stage();
-			
-			
-			
-			Scene scene = new Scene(ventanaDos);
-			stage.setTitle("Creación de cuenta");
-			stage.setScene(scene);
-			stage.show();
-			cerrarVentana();
-		
-	}
+	
 	
 	
 	public void initialize() {
